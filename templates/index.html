@@ -1,49 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine Type Prediction</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
-    <h1>Wine Type Prediction</h1>
+    <div class="container">
 
-    <p>Welcome to the Wine Type Prediction System.</p>
+        <h1>🍷 Wine Type Prediction</h1>
 
-    <form action="/predict" method="POST">
+        <p>
+            Enter the chemical properties of the wine to predict its class
+            using a Machine Learning model.
+        </p>
 
-    <input type="number" step="any" name="Alcohol" placeholder="Alcohol" required><br><br>
+        <form action="/predict" method="POST">
 
-    <input type="number" step="any" name="Malic_Acid" placeholder="Malic Acid" required><br><br>
+            <input type="number" step="any" name="Alcohol" placeholder="Alcohol" required>
 
-    <input type="number" step="any" name="Ash" placeholder="Ash" required><br><br>
+            <input type="number" step="any" name="Malic_Acid" placeholder="Malic Acid" required>
 
-    <input type="number" step="any" name="Alcalinity_of_Ash" placeholder="Alcalinity of Ash" required><br><br>
+            <input type="number" step="any" name="Ash" placeholder="Ash" required>
 
-    <input type="number" step="any" name="Magnesium" placeholder="Magnesium" required><br><br>
+            <input type="number" step="any" name="Alcalinity_of_Ash" placeholder="Alcalinity of Ash" required>
 
-    <input type="number" step="any" name="Total_Phenols" placeholder="Total Phenols" required><br><br>
+            <input type="number" step="any" name="Magnesium" placeholder="Magnesium" required>
 
-    <input type="number" step="any" name="Flavanoids" placeholder="Flavanoids" required><br><br>
+            <input type="number" step="any" name="Total_Phenols" placeholder="Total Phenols" required>
 
-    <input type="number" step="any" name="Nonflavanoid_Phenols" placeholder="Nonflavanoid Phenols" required><br><br>
+            <input type="number" step="any" name="Flavanoids" placeholder="Flavanoids" required>
 
-    <input type="number" step="any" name="Proanthocyanins" placeholder="Proanthocyanins" required><br><br>
+            <input type="number" step="any" name="Nonflavanoid_Phenols" placeholder="Nonflavanoid Phenols" required>
 
-    <input type="number" step="any" name="Color_Intensity" placeholder="Color Intensity" required><br><br>
+            <input type="number" step="any" name="Proanthocyanins" placeholder="Proanthocyanins" required>
 
-    <input type="number" step="any" name="Hue" placeholder="Hue" required><br><br>
+            <input type="number" step="any" name="Color_Intensity" placeholder="Color Intensity" required>
 
-    <input type="number" step="any" name="OD280_OD315" placeholder="OD280/OD315" required><br><br>
+            <input type="number" step="any" name="Hue" placeholder="Hue" required>
 
-    <input type="number" step="any" name="Proline" placeholder="Proline" required><br><br>
+            <input type="number" step="any" name="OD280_OD315" placeholder="OD280/OD315" required>
 
-    <button type="submit">Predict</button>
+            <input type="number" step="any" name="Proline" placeholder="Proline" required>
 
-</form>
+            <button type="submit">Predict</button>
+
+        </form>
+
+    </div>
 
 </body>
 </html>

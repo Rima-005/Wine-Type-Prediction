@@ -1,17 +1,53 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    text-align: center;
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
 }
 
-h1 {
-    color: #8B0000;
-    margin-top: 50px;
+.container{
+    width:70%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
 }
 
-p {
-    font-size: 18px;
-    color: #333;
+h1{
+    text-align:center;
+    color:#8B0000;
+}
+
+p{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+button{
+    grid-column:span 2;
+    padding:12px;
+    background:#8B0000;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#5d0000;
 }
